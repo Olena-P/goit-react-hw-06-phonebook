@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import * as actions from '../../redux/actions';
 import { getContacts } from '../../redux/selectors';
-import { Form, Input, Label, Button, Name, Number } from './ContactForm.styled'
+import { Form, Input, Label, Button, Name, Number } from './ContactForm.styled';
+import { HiUser, HiPhone } from 'react-icons/hi';
 
 export default function ContactForm() {
   const contacts = useSelector(getContacts);
@@ -66,7 +67,7 @@ export default function ContactForm() {
     return (
       <Form onSubmit={handleSubmit}>
         <Label >
-          <Name>Name</Name>
+          <Name> <HiUser/> Name</Name>
           <Input
             
             type="text"
@@ -81,7 +82,7 @@ export default function ContactForm() {
 
         <Label >
           
-          <Number>Number</Number>
+          <Number> <HiPhone/> Number</Number>
           <Input
             type="tel"
             name="number"

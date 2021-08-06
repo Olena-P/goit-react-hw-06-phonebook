@@ -1,5 +1,5 @@
 // import React, { useState, useEffect } from "react";
-// import { v4 as uuid } from "uuid";
+// import { nanoid } from "nanoid";
 import Container from "../Container/Container";
 import ContactForm from "../ContactForm/ContactForm";
 import ContactList from "../ContactList/ContactList";
@@ -68,7 +68,7 @@ export default function App() {
 
 //   // const addContact = ({ name, number }) => {
 //   //   const contact = {
-//   //     id: uuid(),
+//   //     id: nanoid(),
 //   //     name,
 //   //     number,
 //   //   };

@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import * as actions from '../../redux/actions';
 import { getVisibleContacts } from '../../redux/selectors';
 import { List, Item, Button } from "./ContactList.styled";
+import { HiTrash } from 'react-icons/hi';
+
 
 //toolkit - 2
 export default function ContactList() {
@@ -17,7 +19,7 @@ export default function ContactList() {
         <Item key={id}>
           {name}: {number}
           <Button type="button" onClick={() => onDeleteContact(id)}>
-            Delete
+            <HiTrash/>
           </Button>
         </Item>
       ))}

@@ -4,7 +4,7 @@
   --main-bg-color: #f7c627;
   --secondary-color: #6d4810;
   --title-color: #fff;
-  --red-color: #f86868;
+  --red-color: #b80f0f;
 }
 
 * {
@@ -33,8 +33,6 @@ ol {
   list-style: none;
 }
 
-h1,
-h2,
 p {
   margin: 0;
 }
@@ -47,6 +45,7 @@ img {
 
 h1,
 h2 {
+  margin: 0;
   text-align: center;
   padding: 15px;
   color: var(--title-color);

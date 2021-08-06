@@ -1,10 +1,10 @@
 import { createAction } from "@reduxjs/toolkit";
-import { v4 as uuid } from "uuid";
+import { nanoid } from "nanoid";
 
 //Toolkit - 2
 export const addContact = createAction("contacts/add", (name, number) => ({
   payload: {
-    id: uuid(),
+    id: nanoid(),
     name,
     number,
   },
@@ -19,7 +19,7 @@ export const changeFilter = createAction("contacts/changeFilter");
 // export const addContact = (name, number) => ({
 //   type: actionTypes.ADD_CONTACT,
 //   payload: {
-//     id: v4.generate(),
+//     id: import { nanoid } from "nanoid";.generate(),
 //     name,
 //     number,
 //   },
